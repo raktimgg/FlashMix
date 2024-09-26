@@ -1,0 +1,25 @@
+exp_num: 1
+do_wandb: False
+do_validation: False
+base_ds: '/data/raktim/Datasets/Mulran/vReLoc/'
+pickle_loc: 'src/utils/vReLoc_0.pkl'
+val_pickle_loc: 'src/utils/vReLoc_10_test1.pkl'
+feat_extractor_model_path: 'src/checkpoints/SALSA/Model/feat_extractor.pth'
+regressor:
+  num_mixer_channels: 1
+  pose_regressor_layers: 6
+  global_desc_dim_scale: 2
+num_clusters: 50
+loss:
+  contrastive_loss_name: 'triplet_loss'  # 'triplet_loss' or 'barlow_loss'
+  pose_loss_rot_weight: 20 
+  contrastive_loss_scale: 1 # 1 for triplet_loss, 0.0001 for barlow_loss
+
+training:
+  batch_size: 1280
+  epochs: 75
+  max_lr: 0.001
+  pct_start: 0.01
+  final_div_factor: 100
+  save_folder: 'src/checkpoints/FlashMix'
+

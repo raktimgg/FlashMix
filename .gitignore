@@ -1,0 +1,6 @@
+src/checkpoints/
+SparseTransformer/
+src/results/
+src/success_results/
+*.npy
+*.pkl

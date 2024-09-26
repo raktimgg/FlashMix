@@ -1,0 +1,13 @@
+torch_geometric
+spconv-cu120
+cumm-cu120
+open3d
+python-lzf
+transforms3d
+pytorch_metric_learning
+wandb
+einops
+flash_attn
+timm
+h5py
+natsort
