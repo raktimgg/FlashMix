@@ -19,7 +19,7 @@
 
 <center>
 <img src="assets/flow.png" alt="Alt text" />
-<p>Fig. 1: Comparision of LiDAR pose regression-based framework (top) with our fast map-free LiDAR localization system.</p>
+<p><b>Fig. 1: Comparision of LiDAR pose regression-based framework (top) with our fast map-free LiDAR localization system.</b>b</p>
 </center>
 
 ### 🔨 Environment creation
@@ -104,32 +104,36 @@ python src/eval.py --dataset <robotcar or dcc or vReLoc>
 Our pre-trained models can also be downloaded from this [link](). After downloading, copy the contents into the src/checkpoints/FlashMix directory.
 
 ### 📝 Results
-The relocalization rates of the best performing models as a function of training time are plotted below.
+The relocalization rates of the best-performing models as a function of training time are plotted below.
 <center>
 <img src="assets/time_results.png" alt="Alt text" />
 <p>Fig. 2: Analysis of relocalization rate as a function of train time</p>
 </center>
 
 ### 🌈 Visualizations
-<center> <img src="assets/robotcar.gif" alt="Visualization GIF" /> 
-<p>Fig. 3a: Oxford-Radar</p>
+<center> 
+    <img src="assets/robotcar.gif" alt="Visualization GIF" /> 
+    <p><b>Fig. 3a: Oxford-Radar</b></p>
 </center>
-<center> <img src="assets/dcc.gif" alt="Visualization GIF" /> 
-<p>Fig. 3b: Mulran DCC</p>
+
+<br> <!-- Add space using line breaks -->
+
+<center> 
+    <img src="assets/dcc.gif" alt="Visualization GIF" /> 
+    <p><b>Fig. 3b: Mulran DCC</b></p>
 </center>
-<center> <img src="assets/vReLoc.gif" alt="Visualization GIF" /> 
-<p>Fig. 3c: vReLoc</p>
+
+<br> <!-- Add space using line breaks -->
+
+<center> 
+    <img src="assets/vReLoc.gif" alt="Visualization GIF" /> 
+    <p><b>Fig. 3c: vReLoc</b></p>
 </center>
-<center>Fig. 3: Visualization of different methods on test trajectories from Oxford-Radar, DCC, and vReLoC dataset. Trajectory visualization: The ground truth and estimated positions are shown in dark blue and red dots, respectively. The star shows the starting position.</center>
+<br> <!-- Add space using line breaks -->
+<center><b>Fig. 3: Visualization of different methods on test trajectories from Oxford-Radar, DCC, and vReLoC datasets. Trajectory visualization: The ground truth and estimated positions are shown in dark blue and red dots, respectively. The star shows the starting position.</b>b</center>
 
 
 ## 📧 Citation
 
 If you find our work useful in your research please consider citing our publication:
 ```bibtex
-@article{goswami2024salsa,
-  title={SALSA: Swift Adaptive Lightweight Self-Attention for Enhanced LiDAR Place Recognition},
-  author={Goswami, Raktim Gautam and Patel, Naman and Krishnamurthy, Prashanth and Khorrami, Farshad},
-  booktitle={},
-  year={},
-}
