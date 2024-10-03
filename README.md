@@ -2,7 +2,7 @@
 
 📖 Paper (To appear): [`WACV 2025`]()
 
-📖 Pre-print: [``arXiv``]()
+📖 Pre-print: [``arXiv``](https://arxiv.org/abs/2410.00702)
 
 📹 Video: [`Youtube`]()
 
@@ -11,9 +11,9 @@
 #### Control/Robotics Research Laboratory (CRRL), Department of Electrical and Computer Engineering, NYU Tandon School of Engineering
 
 ### 💡 Contributions
-- A novel map-free localization framework combining a pre-trained point encoder with a scene-specific pose regressor with feature buffer enabled rapid training.
-- Integration of an MLP-Mixer as a descriptor aggregator, to fuse global point relationships by feature mixing for adapting to scene-specific geometries.
-- Introduce metric learning and contrastive loss regularization, enhancing global descriptor quality for stable convergence while maintaining fast training times.
+- Map-free LiDAR localization framework combining a pre-trained point encoder and a scene-specific pose regressor, with feature buffer enabled rapid training.
+- MLP-Mixer based descriptor aggregator to fuse global point relationships by feature mixing for adapting to scene-specific geometries.
+- Contrastive and metric learning loss based regularization to enhance global descriptor retrieval performance and stable convergence while maintaining fast training times.
 
 - Extensive experiments in outdoor and indoor environments, demonstrating rapid training and adaptation with competitive performance compared to existing map-free localization methods.
 
