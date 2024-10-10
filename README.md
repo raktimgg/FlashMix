@@ -4,7 +4,7 @@
 
 📖 Pre-print: [``arXiv``](https://arxiv.org/abs/2410.00702)
 
-📹 Video: [`Youtube`]()
+📹 Video: [`Youtube`](https://youtu.be/mhXR8Lqm8Sk)
 
 #### Authors: Raktim Gautam Goswami, Naman Patel, Prashanth Krishnamurthy, Farshad Khorrami 
 
