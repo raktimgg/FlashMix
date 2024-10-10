@@ -71,7 +71,7 @@ data_root
 |  ├-DCC2
 |  ├-DCC3
 ```
-velodyne_left_False.h5 files can be generated using the data generator in [PosePN](https://github.com/PSYZ1234/PosePN). Alternately, we provide the pre-generated file [here]().
+velodyne_left_False.h5 files can be generated using the data generator in [PosePN](https://github.com/PSYZ1234/PosePN). Alternately, we provide the pre-generated file [here](https://drive.google.com/drive/folders/10yD_wLAsReZMeVi5PAFR0tbPfvIWfq1D?usp=drive_link).
 
 ### 📊💾 Dataset Pickle Creation
 ```
@@ -101,7 +101,7 @@ The trained models will be saved in the src/checkpoints/FlashMix directory.
 ```
 python src/eval.py --dataset <robotcar or dcc or vReLoc>
 ```
-Our pre-trained models can also be downloaded from this [link](). After downloading, copy the contents into the src/checkpoints/FlashMix directory.
+Our pre-trained models can also be downloaded from this [link](https://drive.google.com/drive/folders/10yD_wLAsReZMeVi5PAFR0tbPfvIWfq1D?usp=drive_link). After downloading, copy the contents into the src/checkpoints/FlashMix directory.
 
 ### 📝 Results
 The relocalization rates of the best-performing models as a function of training time are plotted below.
