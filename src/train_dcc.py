@@ -256,7 +256,7 @@ def main(args):
     np.save('src/utils/dcc_feature_mean.npy', mean)
     np.save('src/utils/dcc_feature_std.npy', std)
 
-    local_features = (local_features - mean) / std
+    local_features = (local_features - mean) / (std+1e-6)
     
     # entire training data is directly loaded to the GPU for faster training
     local_features_all = torch.Tensor(local_features).to(device)
@@ -264,7 +264,7 @@ def main(args):
     gt_pose_all = torch.Tensor(gt_pose).to(device)
 
     if do_validation:
-        local_features_val = (local_features_val - mean) / std
+        local_features_val = (local_features_val - mean) / (std+1e-6)
         local_features_val_all = torch.Tensor(local_features_val).to(device)
         gt_pose_val_all = torch.Tensor(gt_pose_val).to(device)
 

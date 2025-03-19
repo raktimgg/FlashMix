@@ -4,3 +4,4 @@ src/results/
 src/success_results/
 *.npy
 *.pkl
+*.pyc

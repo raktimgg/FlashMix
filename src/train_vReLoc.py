@@ -64,7 +64,7 @@ def main(args):
             name="Trial",
         )
     # Get data loader
-    dataset_name = 'robotcar'
+    dataset_name = 'vReLoc'
     base_ds = args['base_ds']
     pickle_loc = args['pickle_loc']
     do_validation = args['do_validation']
@@ -256,7 +256,7 @@ def main(args):
     np.save('src/utils/vReLoc_feature_mean.npy', mean)
     np.save('src/utils/vReLoc_feature_std.npy', std)
 
-    local_features = (local_features - mean) / std
+    local_features = (local_features - mean) / (std+1e-6)
 
     # entire training data is directly loaded to the GPU for faster training
     local_features_all = torch.Tensor(local_features).to(device)
@@ -264,7 +264,7 @@ def main(args):
     gt_pose_all = torch.Tensor(gt_pose).to(device)
 
     if do_validation:
-        local_features_val = (local_features_val - mean) / std
+        local_features_val = (local_features_val - mean) / (std+1e-6)
         local_features_val_all = torch.Tensor(local_features_val).to(device)
         gt_pose_val_all = torch.Tensor(gt_pose_val).to(device)
 
@@ -367,7 +367,7 @@ def main(args):
 
                 gt_t = gt_pose[:,:3]
                 gt_q = gt_pose[:,3:]
-                with autocast():
+                with autocast('cuda'):
                     pred_t, pred_q, _, _ = pose_regressor(local_features,xyz)
 
                     loss1, loss_t, loss_q = pose_loss(pred_t, pred_q, gt_t*std_t*5, gt_q)
