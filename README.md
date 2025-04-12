@@ -137,3 +137,11 @@ The relocalization rates of the best-performing models as a function of training
 
 If you find our work useful in your research please consider citing our publication:
 ```bibtex
+@inproceedings{goswami2025flashmix,
+  title={Flashmix: Fast map-free LiDAR localization via feature mixing and contrastive-constrained accelerated training},
+  author={Goswami, Raktim Gautam and Patel, Naman and Krishnamurthy, Prashanth and Khorrami, Farshad},
+  booktitle={2025 IEEE/CVF Winter Conference on Applications of Computer Vision (WACV)},
+  pages={2011--2020},
+  year={2025},
+  organization={IEEE}
+}
