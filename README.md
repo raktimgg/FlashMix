@@ -6,6 +6,8 @@
 
 📹 Video: [`Youtube`](https://youtu.be/mhXR8Lqm8Sk)
 
+🌐 Website: [`Project page`](https://raktimgg.github.io/flashmix-website/)
+
 #### Authors: Raktim Gautam Goswami, Naman Patel, Prashanth Krishnamurthy, Farshad Khorrami 
 
 #### Control/Robotics Research Laboratory (CRRL), Department of Electrical and Computer Engineering, NYU Tandon School of Engineering
